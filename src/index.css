@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+    background: linear-gradient(145deg, #0d0b0b, #060621);
+}
+
 main {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;

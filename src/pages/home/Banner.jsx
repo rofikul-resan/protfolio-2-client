@@ -1,4 +1,3 @@
-import { Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 
 const Banner = () => {
@@ -29,7 +28,7 @@ const Banner = () => {
               className="flex flex-col justify-center items-start py-10 mt-14"
             >
               <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-pink-600">
-                Hello World
+                "Hello World"
               </h1>
               <h2 className="text-2xl font-semibold text-white mt-5">
                 I'm{" "}
@@ -39,14 +38,18 @@ const Banner = () => {
                 ,
               </h2>
               <p className="text-white text-xl">a software developer</p>
-              <p className="text-xl text-white mt-10 font-roboto">
-                I am a Dedicated MERN Stack developer with a passion for hard
-                work and a genuine love for what I do. Proficient in JavaScript
-                and experience in REACT with a understanding of backend
-                concepts. Seeking a challenging role to contribute and grow with
-                a company.
+              <p className=" text-white mt-10 font-roboto">
+                I am a Dedicated{" "}
+                <span className="text-orange-300 font-semibold text-xl">
+                  Web Application developer
+                </span>{" "}
+                with a passion for hard work and a genuine love for what I do.
+                Proficient in JavaScript and experience in REACT with a
+                understanding of backend concepts. Seeking a challenging role to
+                contribute and grow with a company.
               </p>
             </motion.div>
+
             <motion.div
               className="mx-auto"
               animate={{
