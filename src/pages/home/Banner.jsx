@@ -7,14 +7,14 @@ const Banner = () => {
         <img
           src="/banner-bg.jpg"
           alt="background code window image  "
-          className="w-full h-screen "
+          className="w-full h-[550px] "
         />
         {/* add a black color overlay */}
         <div className="absolute inset-0 bg-black/70 z-10 h-full">
           {/* separated in tow div for one side text and other side image */}
-          <div className="grid grid-cols-2 w-11/12 mx-auto mt-14 gap-4 ">
+          <div className="grid grid-cols-2 w-11/12 mx-auto mt-14 gap-4 max-w-screen-2xl  ">
             <motion.div
-              initial={{ y: 1000, opacity: 0 }}
+              initial={{ y: -1000, opacity: 0 }}
               animate={{
                 y: 0,
                 opacity: 1,
@@ -22,7 +22,7 @@ const Banner = () => {
               transition={{
                 delay: 0.5,
                 type: "spring",
-                stiffness: 150,
+                stiffness: 100,
                 duration: 0.4,
               }}
               className="flex flex-col justify-center items-start py-10 mt-14"
@@ -65,7 +65,7 @@ const Banner = () => {
                 delay: 0.5,
                 duration: 0.3,
                 type: "spring",
-                stiffness: 150,
+                stiffness: 80,
               }}
             >
               <img

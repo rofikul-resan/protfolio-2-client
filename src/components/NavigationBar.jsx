@@ -13,11 +13,11 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuItems = ["Home", "Project", "About", "Blog"];
+  const menuItems = ["Home", "Project", "About", "Blog", "Contact"];
 
   return (
     <Navbar
-      maxWidth="full"
+      maxWidth="2xl"
       position="sticky"
       isBordered
       isMenuOpen={isMenuOpen}
@@ -41,7 +41,7 @@ const NavigationBar = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4 w-full  " justify="center">
+      <NavbarContent className="hidden sm:flex gap-4 w-full  ">
         <NavbarBrand className="mr-10">
           <p className="font-bold text-inherit">
             <span className="text-xl">@/</span>
@@ -50,25 +50,46 @@ const NavigationBar = () => {
             </span>{" "}
           </p>
         </NavbarBrand>
-
-        <NavbarItem isActive={true}>
+      </NavbarContent>
+      <NavbarContent className="hidden sm:flex" justify="center">
+        <NavbarItem
+          className="hover:-translate-y-1 duration-150 hover:animate-bounce"
+          isActive={true}
+        >
           <Link color="foreground" href="#">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem
+          className="hover:-translate-y-1 duration-150 hover:animate-bounce"
+          isActive={false}
+        >
           <Link color="foreground" href="#">
             Project
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem
+          className="hover:-translate-y-1 duration-150 hover:animate-bounce"
+          isActive={false}
+        >
           <Link color="foreground" href="#">
             About
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem
+          className="hover:-translate-y-1 duration-150 hover:animate-bounce"
+          isActive={false}
+        >
           <Link color="foreground" href="#">
             Blog
+          </Link>
+        </NavbarItem>
+        <NavbarItem
+          className="hover:-translate-y-1 duration-150 hover:animate-bounce"
+          isActive={false}
+        >
+          <Link color="foreground" href="#">
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>

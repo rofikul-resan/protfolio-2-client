@@ -12,3 +12,7 @@ main {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
 }
+
+li[data-active="true"] {
+    @apply underline text-orange-600 underline-offset-4
+}
