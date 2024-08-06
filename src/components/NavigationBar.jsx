@@ -9,6 +9,7 @@ import {
   NavbarMenuToggle,
 } from "@nextui-org/react";
 import { useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
@@ -96,8 +97,8 @@ const NavigationBar = () => {
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden sm:flex">
-          <Button variant="ghost" color="success">
-            Get resume
+          <Button variant="ghost" color="primary" endContent={<FaArrowRight />}>
+            Hire me
           </Button>
         </NavbarItem>
       </NavbarContent>

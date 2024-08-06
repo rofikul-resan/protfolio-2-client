@@ -2,7 +2,7 @@ const AboutSection = () => {
   return (
     <section className="mt-10 text-pink-300">
       <div className="w-fit mx-auto">
-        <h1 className="text-4xl text-center mx-3">About Me</h1>
+        <h1 className="text-4xl text-center mx-3">About Myself</h1>
         <div className="w-full h-1 bg-orange-600 mt-1 rounded-full"></div>
       </div>
 
@@ -17,9 +17,51 @@ const AboutSection = () => {
           />
         </div>
         {/* about text */}
-        <div>
-          <h1 className="text-3xl">Rofikul Islam Resan</h1>
-          <p>Full Stack Web Developer</p>
+        <div className="space-y-3">
+          <div>
+            <h1 className="text-4xl">Rofikul Islam Resan</h1>
+            <p>Full Stack Web Developer</p>
+          </div>
+
+          <div>
+            <h1 className="text-2xl underline mb-2">Education Qualification</h1>
+            <div className="ml-3">
+              <p>Bachelor of Business Administration, 2022-Present</p>
+              <p className="font-semibold italic">
+                {" "}
+                <a
+                  href="http://www.nubd.info/college/college.php?code=2101"
+                  className="hover:underline cursor-pointer"
+                >
+                  {" "}
+                  Govt. Edward College, Pabna, Bangladesh
+                </a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <h1 className="text-2xl underline mb-2">Course</h1>
+            <div className="ml-3">
+              <p>Complete Web Development</p>
+              <p className="font-semibold italic">
+                {" "}
+                <a
+                  href="https://web.programming-hero.com/course-details"
+                  className="hover:underline cursor-pointer"
+                >
+                  {" "}
+                  Programming Hero
+                </a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <h1 className="text-2xl underline mb-2">Programming Langues</h1>
+            <div className="ml-3">
+              <p>JavaScript - Intermitted</p>
+              <p>Python - Bigener</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

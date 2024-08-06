@@ -1,4 +1,6 @@
+import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import { LuClipboardList } from "react-icons/lu";
 
 const Banner = () => {
   return (
@@ -12,7 +14,7 @@ const Banner = () => {
         {/* add a black color overlay */}
         <div className="absolute inset-0 bg-black/70 z-10 h-full">
           {/* separated in tow div for one side text and other side image */}
-          <div className="grid grid-cols-2 w-11/12 mx-auto mt-14 gap-4 max-w-screen-2xl  ">
+          <div className=" w-9/12 mx-auto mt-14  max-w-screen-2xl  ">
             <motion.div
               initial={{ y: -1000, opacity: 0 }}
               animate={{
@@ -37,7 +39,9 @@ const Banner = () => {
                 </span>
                 ,
               </h2>
-              <p className="text-white text-xl">a software developer</p>
+              <p className="text-white  text-xl">
+                a <span className="uppercase font-semibold">Web developer</span>
+              </p>
               <p className=" text-white mt-10 font-roboto">
                 I am a Dedicated{" "}
                 <span className="text-orange-300 font-semibold text-xl">
@@ -48,9 +52,17 @@ const Banner = () => {
                 understanding of backend concepts. Seeking a challenging role to
                 contribute and grow with a company.
               </p>
+              <Button
+                variant="shadow"
+                color="success"
+                className="mt-8"
+                endContent={<LuClipboardList />}
+              >
+                Get resume
+              </Button>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               className="mx-auto"
               animate={{
                 x: 0,
@@ -73,7 +85,7 @@ const Banner = () => {
                 alt="developer image"
                 className="mx-auto w-[450px]"
               />
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
