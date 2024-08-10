@@ -24,7 +24,6 @@ const SkillSection = () => {
             }
           }
         }
-        console.log("row list", allSkillsIconList);
         setAllSkills(allSkillsIconList);
         return;
       });
@@ -34,11 +33,21 @@ const SkillSection = () => {
     <section>
       <div>
         <SectionHeader title={"My Skills"} />
-        {/* <div className="flex flex-col md:flex-row flex-wrap gap-12 w-10/12 mx-auto justify-self-end">
-          {allSkills.map((skill, i) => (
-            <SkillIconCard key={i} skill={skill} />
-          ))}
-        </div> */}
+        <div className=" w-10/12 mx-auto mt-12 ">
+          {allSkills.length > 0 &&
+            allSkills.map((skillRow, idx) => (
+              <div
+                key={idx}
+                className={`flex flex-wrap justify-center gap-12 ${
+                  idx >= 1 ? "-mt-14" : ""
+                } `}
+              >
+                {skillRow.map((skill) => (
+                  <SkillIconCard key={skill.id} skill={skill} />
+                ))}
+              </div>
+            ))}
+        </div>
       </div>
     </section>
   );
