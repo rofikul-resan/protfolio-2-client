@@ -1,10 +1,9 @@
+import SectionHeader from "../../components/SectionHeader";
+
 const AboutSection = () => {
   return (
     <section className="mt-10 text-pink-300">
-      <div className="w-fit mx-auto">
-        <h1 className="text-4xl text-center mx-3">About Myself</h1>
-        <div className="w-full h-1 bg-orange-600 mt-1 rounded-full"></div>
-      </div>
+      <SectionHeader title={"About Myself"} />
 
       {/* tow div  one side my image and other side text about me and my education qualification */}
       <div className="grid grid-cols-2 justify-center mt-8">

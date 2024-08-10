@@ -1,0 +1,78 @@
+[
+    {
+        "name": "HTML",
+        "icon": "/html-5.png"
+    },
+    {
+        "name": "CSS",
+        "icon": "/css-3.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "/javascript.svg"
+    },
+    {
+        "name": "React",
+        "icon": "/react.png"
+    },
+    {
+        "name": "NodeJs",
+        "icon": "/node-js.png"
+    },
+    {
+        "name": "Express",
+        "icon": "/express-js.svg"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "/mongodb.svg"
+    },
+    {
+        "name": "Git",
+        "icon": "/git.svg"
+    },
+    {
+        "name": "GitHub",
+        "icon": "/github.png"
+    },
+    {
+        "name": "TailwindCSS",
+        "icon": "/tailwindcss.svg"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "/bootstrap.svg"
+    },
+    {
+        "name": "TypeScript",
+        "icon": "/typescript.svg"
+    },
+    {
+        "name": "Sass",
+        "icon": "/icons8-sass.svg"
+    },
+    {
+        "name": "MaterialUI",
+        "icon": "/mui.png"
+    },
+    {
+        "name": "Redux",
+        "icon": "/redux-50.png"
+    },
+    {
+        "name": "firebase",
+        "icon": "/firebase.svg"
+    },
+    {
+        "name": "NextJs",
+        "icon": "/nextjs.svg"
+    },
+    {
+        "name": "vsCode",
+        "icon": "/visual-studio.svg"
+    },
+    {
+        "name": "npm",
+        "icon": "/npm.svg"
+    }
+]

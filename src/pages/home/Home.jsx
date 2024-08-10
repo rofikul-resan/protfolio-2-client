@@ -1,5 +1,6 @@
 import AboutSection from "./AboutSection";
 import Banner from "./Banner";
+import SkillSection from "./SkillSection";
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
       <Banner />
       <div className="mx-auto max-w-[1400px]">
         <AboutSection />
+        <SkillSection />
       </div>
     </div>
   );
