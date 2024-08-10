@@ -1,6 +1,4 @@
 const SkillIconCard = ({ skill }) => {
-  console.log(skill);
-
   return (
     <div>
       <div className={`relative h-28 w-28 my-4 pt-2`}>
