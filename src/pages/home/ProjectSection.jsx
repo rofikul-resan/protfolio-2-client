@@ -10,11 +10,11 @@ const ProjectSection = () => {
       .then((data) => setProjects(data));
   }, []);
   return (
-    <section>
+    <section className="w-11/12 mx-auto">
       <SectionHeader title={"Project"} />
       <div>
         {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard key={index} card={project} index={index} />
         ))}
       </div>
     </section>
