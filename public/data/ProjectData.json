@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Project One",
+        "images": [
+            "/project1.png",
+            "/project1.png",
+            "/project1.png"
+        ],
+        "details": "This is a detailed description of Project One, highlighting its purpose, functionality, and overall structure.",
+        "features": [
+            "Responsive design with modern UI/UX.",
+            "Real-time data updates using WebSockets.",
+            "Authentication and authorization implemented."
+        ],
+        "technology": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS"
+        ],
+        "github": {
+            "client": "#",
+            "server": "#"
+        },
+        "liveHost": "#",
+        "videoDemo": "#"
+    },
+    {
+        "name": "Project Two",
+        "images": [
+            "/project1.png",
+            "/project1.png",
+            "/project1.png"
+        ],
+        "details": "This is a detailed description of Project Two, focusing on the innovative features and the technologies used.",
+        "features": [
+            "E-commerce functionality with payment gateway integration.",
+            "Advanced search and filtering capabilities.",
+            "Admin dashboard for managing users and content."
+        ],
+        "technology": [
+            "Vue.js",
+            "Firebase",
+            "Bootstrap",
+            "Redux",
+            "Stripe API"
+        ],
+        "github": {
+            "client": "#",
+            "server": "#"
+        },
+        "liveHost": "#",
+        "videoDemo": "#"
+    }
+]
