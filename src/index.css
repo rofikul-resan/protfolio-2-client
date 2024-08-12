@@ -6,6 +6,7 @@
 
 #root {
     background: linear-gradient(145deg, #0d0b0b, #060621);
+    color: #f9a8d4;
 }
 
 main {
@@ -15,4 +16,40 @@ main {
 
 li[data-active="true"] {
     @apply underline text-orange-600 underline-offset-4
+}
+
+.card {
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.card::after {
+    content: "";
+    background-image: conic-gradient(from 90deg, rgb(62, 13, 126), rgb(66, 66, 6), transparent);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    padding: 10px;
+
+
+}
+
+.card::before {
+    content: "";
+    background-image: conic-gradient(from 90deg, #41078b, #c43f15, transparent);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    padding: 10px;
+    filter: blur(10px);
+
 }
