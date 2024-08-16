@@ -9,7 +9,7 @@ const Banner = () => {
         <img
           src="/banner-bg.jpg"
           alt="background code window image  "
-          className="w-full h-[550px] "
+          className="w-full h-screen "
         />
         {/* add a black color overlay */}
         <div className="absolute inset-0 bg-black/70 z-10 h-full">
@@ -29,7 +29,7 @@ const Banner = () => {
               }}
               className="flex flex-col justify-center items-start py-10 mt-14"
             >
-              <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-[#41078b]">
+              <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-violet-900">
                 "Hello World"
               </h1>
               <h2 className="text-2xl font-semibold text-white mt-5">
@@ -37,14 +37,16 @@ const Banner = () => {
                 <span className="text-4xl text-orange-300">
                   Rofikul Islam Resan
                 </span>
-                ,
               </h2>
               <p className="text-white  text-xl">
-                a <span className="uppercase font-semibold">Web developer</span>
+                a{" "}
+                <span className="uppercase font-semibold text-2xl text-violet-400">
+                  Web developer
+                </span>
               </p>
-              <p className=" text-white mt-10 font-roboto">
+              <p className=" text-white mt-10 font-roboto w-10/12">
                 I am a Dedicated{" "}
-                <span className="text-orange-300 font-semibold text-xl">
+                <span className="text-orange-300 font-semibold text-2xl">
                   Web Application developer
                 </span>{" "}
                 with a passion for hard work and a genuine love for what I do.

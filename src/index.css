@@ -4,9 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --rotate-angle {
+    syntax: "<angle>";
+    initial-value: 90deg;
+    inherits: false;
+}
+
 #root {
+    --text-primary: #f9a8d4;
+    --card-bg: #051336ea;
     background: linear-gradient(145deg, #0d0b0b, #060621);
-    color: #f9a8d4;
+    color: var(--text-primary);
 }
 
 main {
@@ -19,37 +27,45 @@ li[data-active="true"] {
 }
 
 .card {
+    height: fit-content;
+    border-radius: 6px;
     position: relative;
-    z-index: 10;
-    box-sizing: border-box;
+    background: var(--card-bg);
+    backdrop-filter: blur(50px);
+
+
 }
 
-.card::after {
+
+
+.card::after,
+.card::before {
     content: "";
-    background-image: conic-gradient(from 90deg, rgb(62, 13, 126), rgb(66, 66, 6), transparent);
+    background-image: conic-gradient(from var(--rotate-angle), #1e073b, #1e073b, #2e0b4b80, #1e073b);
     position: absolute;
     top: -50%;
     left: 50%;
     transform: translate(-50%, 50%);
+
     height: 100%;
     width: 100%;
     z-index: -1;
-    padding: 10px;
-
+    animation: spin-border 2s ease-in infinite;
 
 }
 
 .card::before {
-    content: "";
-    background-image: conic-gradient(from 90deg, #41078b, #c43f15, transparent);
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    padding: 10px;
-    filter: blur(10px);
 
+    filter: blur(1px);
+
+}
+
+@keyframes spin-border {
+    0% {
+        --rotate-angle: 0deg
+    }
+
+    100% {
+        --rotate-angle: 360deg
+    }
 }
