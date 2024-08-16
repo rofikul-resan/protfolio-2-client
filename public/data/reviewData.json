@@ -1,0 +1,27 @@
+[
+    {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "review": "Excellent product! Highly recommended."
+    },
+    {
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "review": "The service was top-notch. I'm very satisfied with my experience."
+    },
+    {
+        "name": "Michael Johnson",
+        "email": "michael.johnson@example.com",
+        "review": "Could be better. The product didn't meet my expectations."
+    },
+    {
+        "name": "Emily Williams",
+        "email": "emily.williams@example.com",
+        "review": "I had a great experience. The customer support was very helpful."
+    },
+    {
+        "name": "David Brown",
+        "email": "david.brown@example.com",
+        "review": "Average product. Nothing exceptional, but it gets the job done."
+    }
+]

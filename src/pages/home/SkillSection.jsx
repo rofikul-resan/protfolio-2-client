@@ -42,8 +42,8 @@ const SkillSection = () => {
                   idx >= 1 ? "-mt-14" : ""
                 } `}
               >
-                {skillRow.map((skill) => (
-                  <SkillIconCard key={skill.id} skill={skill} />
+                {skillRow.map((skill, i) => (
+                  <SkillIconCard key={i} skill={skill} />
                 ))}
               </div>
             ))}
