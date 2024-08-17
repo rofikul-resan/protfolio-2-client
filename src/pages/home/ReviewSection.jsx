@@ -74,7 +74,7 @@ const ReviewSection = () => {
             pagination={{
               clickable: true,
             }}
-            modules={[Pagination, Navigation, Autoplay, A11y]}
+            modules={[Pagination, Navigation, Autoplay]}
             className="mySwiper px-10"
           >
             {reviews.map((review, index) => (

@@ -8,11 +8,11 @@ const AboutSection = () => {
       {/* tow div  one side my image and other side text about me and my education qualification */}
       <div className="grid grid-cols-2 justify-center mt-8">
         {/* about image */}
-        <div className="mt-20 w-72 h-72 overflow-hidden rounded-3xl mx-auto">
+        <div className="mt-20 w-72 h-80  rounded-xl mx-auto about-img">
           <img
             src="https://i.pinimg.com/originals/34/bd/b1/34bdb174b8f21b2908cbcf570c099c59.jpg"
             alt="my image"
-            className="w-72 rounded-3xl mx-auto "
+            className="w-72 h-80 rounded-xl mx-auto "
           />
         </div>
         {/* about text */}
