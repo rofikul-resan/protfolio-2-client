@@ -1,5 +1,6 @@
 import AboutSection from "./AboutSection";
 import Banner from "./Banner";
+import BlogSection from "./BlogSection";
 import ProjectSection from "./ProjectSection";
 import ReviewSection from "./ReviewSection";
 import SkillSection from "./SkillSection";
@@ -13,6 +14,7 @@ const Home = () => {
         <SkillSection />
         <ProjectSection />
         <ReviewSection />
+        <BlogSection />
       </div>
     </div>
   );

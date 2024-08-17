@@ -1,6 +1,7 @@
 [
     {
-        "title": "Efficient Ways to Write React Code: Best Practices for Developers",
+        "id": "001",
+        "title": "Efficient Ways to Write React Code ",
         "image": "https://images.prismic.io/turing/652ec132fbd9a45bcec81908_10_Best_Practices_for_Writing_Clean_React_Code_1_11zon_b8bfb9f45e.webp?auto=format%2Ccompress&fit=max&w=1920",
         "introduction": "In the world of web development, React has become a go-to library for building user interfaces. However, with great power comes the responsibility to write clean, efficient, and maintainable code. Whether you're a seasoned developer or just starting out, following best practices can significantly improve your code quality and project success. Here are some key strategies to help you write more efficient React code.",
         "sections": [
@@ -107,6 +108,7 @@
         "conclusion": "Writing efficient React code is about making smart choices in how you structure, organize, and manage your components and state. By following these best practices, you can create applications that are not only fast and scalable but also maintainable and easy to work on as your project grows. Happy coding!"
     },
     {
+        "id": "002",
         "title": "The Benefits of JavaScript",
         "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/64df6c8580958_js_history_2.jpg?d=2000x2000",
         "introduction": "JavaScript is one of the most widely used programming languages in the world, and for good reason. Whether you're developing a simple website or a complex web application, JavaScript offers a host of benefits that make it an essential tool in every developer's toolkit. In this blog, we'll explore the key benefits of JavaScript and why it continues to be a cornerstone of modern web development.",

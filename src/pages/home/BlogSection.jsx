@@ -11,7 +11,7 @@ const BlogSection = () => {
   return (
     <section>
       <SectionHeader title={"blog"} />
-      <div>
+      <div className="grid grid-cols-2 gap-6 mt-10 px-10">
         {blogs.map((blog, index) => (
           <BlogCard key={index} blog={blog} />
         ))}
