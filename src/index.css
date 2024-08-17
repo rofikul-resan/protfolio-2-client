@@ -41,7 +41,7 @@ li[data-active="true"] {
 .card::after,
 .card::before {
     content: "";
-    background-image: conic-gradient(from var(--rotate-angle), #1e073b, #1e073b, #2e0b4b80, #1e073b);
+    background-image: conic-gradient(from var(--rotate-angle), #1e073b, #1b0733, #051d3363, #1e073b);
     position: absolute;
     top: -50%;
     left: 50%;

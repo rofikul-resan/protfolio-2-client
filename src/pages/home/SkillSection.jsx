@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SectionHeader from "../../components/SectionHeader";
-import SkillIconCard from "../../components/SkillIconCard";
 import { useEffect } from "react";
+import SkillIconCard from "../../components/card/SkillIconCard";
 
 const SkillSection = () => {
   const [allSkills, setAllSkills] = useState([]);

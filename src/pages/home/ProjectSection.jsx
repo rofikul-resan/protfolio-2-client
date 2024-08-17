@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "../../components/SectionHeader";
-import ProjectCard from "../../components/ProjectCard";
+import ProjectCard from "../../components/card/ProjectCard";
 
 const ProjectSection = () => {
   const [projects, setProjects] = useState([]);

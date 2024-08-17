@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import SectionHeader from "../../components/SectionHeader";
 import axios from "axios";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -10,12 +10,10 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
-import ReviewCard from "../../components/ReviewCard";
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
+import ReviewCard from "../../components/card/ReviewCard";
 
 const ReviewSection = () => {
-  const swiper = useSwiper();
-
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
     axios
