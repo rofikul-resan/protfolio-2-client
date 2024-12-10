@@ -23,7 +23,7 @@ const NavigationBar = () => {
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-black text-white"
+      className="bg-black/50 text-white"
     >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
@@ -35,7 +35,7 @@ const NavigationBar = () => {
         <NavbarBrand>
           <p className="font-bold text-inherit">
             <span className="text-xl">@/</span>
-            <span className=" text-2xl  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-pink-600">
+            <span className=" text-2xl  font-semibold gradient-text">
               rofikul-resan
             </span>{" "}
           </p>
@@ -61,12 +61,13 @@ const NavigationBar = () => {
             Home
           </Link>
         </NavbarItem>
+
         <NavbarItem
           className="hover:-translate-y-1 duration-150 hover:animate-bounce"
           isActive={false}
         >
           <Link color="foreground" href="#">
-            Project
+            About
           </Link>
         </NavbarItem>
         <NavbarItem
@@ -74,7 +75,7 @@ const NavigationBar = () => {
           isActive={false}
         >
           <Link color="foreground" href="#">
-            About
+            Project
           </Link>
         </NavbarItem>
         <NavbarItem

@@ -1,5 +1,5 @@
 import { BsArrowRight } from "react-icons/bs";
-import SectionHeader from "../../components/SectionHeader";
+import SectionHeader from "../../../components/SectionHeader";
 
 const AboutSection = () => {
   return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import SectionHeader from "../../components/SectionHeader";
+import SectionHeader from "../../../components/SectionHeader";
 import axios from "axios";
-import BlogCard from "../../components/card/BlogCard";
+import BlogCard from "../../../components/card/BlogCard";
 
 const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);

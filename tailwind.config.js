@@ -13,6 +13,7 @@ export default {
         roboto: ["Roboto", "sans-serif"],
       },
       boxShadow: { card: "0px 35px 120px -15px #211e35" },
+      backgroundImage: { "bg-body": "url('/banner-bg.jpg')" },
     },
   },
   darkMode: "class",

@@ -10,10 +10,15 @@
   inherits: false;
 }
 
+@layer utilities {
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-pink-600;
+  }
+}
 #root {
   --text-primary: #f9a8d4;
   --card-bg: #051336ea;
-  background: linear-gradient(145deg, #0d0b0b, #060621);
+  background: linear-gradient(145deg, #050816, #060621);
   color: var(--text-primary);
 }
 

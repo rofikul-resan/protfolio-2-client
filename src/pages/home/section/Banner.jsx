@@ -29,7 +29,7 @@ const Banner = () => {
               }}
               className="flex flex-col justify-center items-start py-10 mt-14"
             >
-              <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-violet-900">
+              <h1 className="text-5xl font-bold gradient-text">
                 "Hello World"
               </h1>
               <h2 className="text-2xl font-semibold text-white mt-5">

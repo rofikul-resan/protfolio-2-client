@@ -1,9 +1,8 @@
-import AboutSection from "./AboutSection";
-import Banner from "./Banner";
-import BlogSection from "./BlogSection";
-import ProjectSection from "./ProjectSection";
-import ReviewSection from "./ReviewSection";
-import SkillSection from "./SkillSection";
+import Banner from "./section/Banner";
+import ProjectSection from "./section/ProjectSection";
+import SkillSection from "./section/SkillSection";
+import AboutSection from "./section/AboutSection";
+import BlogSection from "./section/BlogSection";
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
         <SkillSection />
         <ProjectSection />
         <BlogSection />
-        <ReviewSection />
       </div>
     </div>
   );
