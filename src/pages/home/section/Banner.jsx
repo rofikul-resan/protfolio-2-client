@@ -40,18 +40,16 @@ const Banner = () => {
               </h2>
               <p className="text-white  text-xl">
                 a{" "}
-                <span className="uppercase font-semibold text-2xl text-violet-400">
+                <span className="uppercase font-semibold text-2xl text-subHeading ">
                   Web developer
                 </span>
               </p>
-              <p className=" text-white mt-10 font-roboto w-10/12">
-                I am a Dedicated{" "}
-                <span className="text-orange-300 font-semibold text-2xl">
-                  Web Application developer
-                </span>{" "}
-                with a passion for hard work and a genuine love for what I do.
-                Proficient in JavaScript and experience in REACT with a
-                understanding of backend concepts. Seeking a challenging role to
+              <p className=" text-white mt-10 font-roboto w-10/12 text-xl">
+                I am a Dedicated <strong>Web Application developer</strong> with
+                a passion for hard work and a genuine love for what I do.
+                Proficient in <strong>JavaScript</strong> and experience in{" "}
+                <strong>REACT</strong> with a understanding of{" "}
+                <strong>backend concepts</strong>. Seeking a challenging role to
                 contribute and grow with a company.
               </p>
               <Button
