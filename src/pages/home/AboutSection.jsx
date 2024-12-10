@@ -1,3 +1,4 @@
+import { BsArrowRight } from "react-icons/bs";
 import SectionHeader from "../../components/SectionHeader";
 
 const AboutSection = () => {
@@ -33,7 +34,10 @@ const AboutSection = () => {
                   className="hover:underline cursor-pointer"
                 >
                   {" "}
-                  Govt. Edward College, Pabna, Bangladesh
+                  Govt. Edward College, Pabna, Bangladesh{" "}
+                  <span>
+                    <BsArrowRight className="inline" />
+                  </span>
                 </a>
               </p>
             </div>

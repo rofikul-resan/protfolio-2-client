@@ -3,15 +3,15 @@ import SectionHeader from "../../components/SectionHeader";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
+import ReviewCard from "../../components/card/ReviewCard";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
-import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
-import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
-import ReviewCard from "../../components/card/ReviewCard";
 
 const ReviewSection = () => {
   const [reviews, setReviews] = useState([]);
