@@ -5,8 +5,12 @@ import SkillIconCard from "../../../components/card/SkillIconCard";
 
 const SkillSection = () => {
   const [allSkills, setAllSkills] = useState([]);
+  const [cardSize, setCardSize] = useState(0);
 
   useEffect(() => {
+    const displayWidth = screen.width;
+    setCardSize(displayWidth / 10.77);
+
     fetch("/data/skillIcon.json")
       .then((res) => res.json())
       .then((data) => {
@@ -28,6 +32,7 @@ const SkillSection = () => {
         return;
       });
   }, []);
+  console.log(cardSize);
 
   return (
     <section>
@@ -38,12 +43,12 @@ const SkillSection = () => {
             allSkills.map((skillRow, idx) => (
               <div
                 key={idx}
-                className={`flex flex-wrap justify-center gap-12 ${
+                className={`flex  justify-center gap-12 ${
                   idx >= 1 ? "-mt-14" : ""
                 } `}
               >
                 {skillRow.map((skill, i) => (
-                  <SkillIconCard key={i} skill={skill} />
+                  <SkillIconCard key={i} skill={skill} size={127} />
                 ))}
               </div>
             ))}

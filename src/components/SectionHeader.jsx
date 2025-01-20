@@ -1,8 +1,9 @@
-const SectionHeader = ({ title }) => {
+const SectionHeader = ({ title, headline, detail }) => {
   return (
-    <div className="w-fit mx-auto">
-      <h1 className="text-2xl text-center mx-3 capitalize">{title}</h1>
-      <div className="w-full h-1 bg-orange-600 mt-1 rounded-full"></div>
+    <div>
+      <h3 className="text-xl capitalize">{title || ""}</h3>
+      <h1 className="text-4xl text-success font-bold">{headline || ""}</h1>
+      <p className=" w-8/12">{detail || ""}</p>
     </div>
   );
 };

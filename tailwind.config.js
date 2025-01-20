@@ -10,9 +10,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "#7e57c2",
         subHeading: " font-semibold text-violet-400",
         heading: " font-bold gradient-text",
         paragraph: "font-roboto text-white",
+        secondary: "#c2410c",
+        success: "#b39ddb",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

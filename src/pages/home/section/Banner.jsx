@@ -29,28 +29,29 @@ const Banner = () => {
               }}
               className="flex flex-col justify-center items-start py-10 mt-14"
             >
-              <h1 className="text-5xl font-bold gradient-text">
+              <h1 className="text-5xl font-bold gradient-text italic">
                 "Hello World"
               </h1>
-              <h2 className="text-2xl font-semibold text-white mt-5">
+              <h2 className="text-4xl font-semibold text-white mt-5">
                 I'm{" "}
-                <span className="text-4xl text-orange-300">
+                <span className="text-5xl text-primary font-black">
                   Rofikul Islam Resan
                 </span>
               </h2>
               <p className="text-white  text-xl">
                 a{" "}
-                <span className="uppercase font-semibold text-2xl text-subHeading ">
+                <span className="uppercase font-semibold text-3xl text-subHeading ">
                   Web developer
                 </span>
               </p>
               <p className=" text-white mt-10 font-roboto w-10/12 text-xl">
-                I am a Dedicated <strong>Web Application developer</strong> with
-                a passion for hard work and a genuine love for what I do.
-                Proficient in <strong>JavaScript</strong> and experience in{" "}
-                <strong>REACT</strong> with a understanding of{" "}
-                <strong>backend concepts</strong>. Seeking a challenging role to
-                contribute and grow with a company.
+                My passion for hard work and love for what I do make me a
+                dedicated <strong>Web Application developer</strong>. I have
+                experience in <strong>JavaScript, React JS, Next JS</strong> and
+                an understanding of <strong>backend concepts</strong> involving{" "}
+                <strong>Node JS, and Express JS.</strong> In an ideal world, I
+                would like to be a part of an organization that is challenging,
+                and growing, and where I can contribute significantly.
               </p>
               <Button
                 variant="shadow"
@@ -61,31 +62,6 @@ const Banner = () => {
                 Get resume
               </Button>
             </motion.div>
-
-            {/* <motion.div
-              className="mx-auto"
-              animate={{
-                x: 0,
-                opacity: 1,
-              }}
-              whileHover={{ scale: 1.04 }}
-              initial={{
-                x: 1000,
-                opacity: 0,
-              }}
-              transition={{
-                delay: 0.5,
-                duration: 0.3,
-                type: "spring",
-                stiffness: 80,
-              }}
-            >
-              <img
-                src="/resan.png"
-                alt="developer image"
-                className="mx-auto w-[450px]"
-              />
-            </motion.div> */}
           </div>
         </div>
       </div>

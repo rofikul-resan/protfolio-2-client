@@ -18,12 +18,12 @@ const NavigationBar = () => {
 
   return (
     <Navbar
-      maxWidth="2xl"
+      maxWidth="xl"
       position="sticky"
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-black/50 text-white"
+      className="bg-black/50 text-white "
     >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
@@ -46,7 +46,7 @@ const NavigationBar = () => {
         <NavbarBrand className="mr-10">
           <p className="font-bold text-inherit">
             <span className="text-xl">@/</span>
-            <span className=" text-2xl  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-pink-600">
+            <span className=" text-2xl  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               rofikul-resan
             </span>{" "}
           </p>

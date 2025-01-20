@@ -3,17 +3,26 @@ import SectionHeader from "../../../components/SectionHeader";
 
 const AboutSection = () => {
   return (
-    <section className="mt-10 text-pink-300">
-      <SectionHeader title={"About Myself"} />
+    <section className="mt-10 ">
+      <SectionHeader
+        title={"Introduction"}
+        headline={"Introduction"}
+        detail={
+          "I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!"
+        }
+      />
 
       {/* tow div  one side my image and other side text about me and my education qualification */}
       <div className="grid grid-cols-2 justify-center mt-8">
         {/* about image */}
-        <div className="mt-20 w-72 h-80  rounded-xl mx-auto about-img">
+        <div
+          className="
+          h-full  rounded-xl mx-auto about-img overflow-hidden"
+        >
           <img
-            src="https://i.pinimg.com/originals/34/bd/b1/34bdb174b8f21b2908cbcf570c099c59.jpg"
+            src="https://i.pinimg.com/1200x/3a/f8/e8/3af8e8bde9ec947056991a6c3b0c5c41.jpg"
             alt="my image"
-            className="w-72 h-80 rounded-xl mx-auto "
+            className="w-80  rounded-xl mx-auto "
           />
         </div>
         {/* about text */}
@@ -31,7 +40,7 @@ const AboutSection = () => {
                 {" "}
                 <a
                   href="http://www.nubd.info/college/college.php?code=2101"
-                  className="hover:underline cursor-pointer"
+                  className="hover:underline cursor-pointer text-success"
                 >
                   {" "}
                   Govt. Edward College, Pabna, Bangladesh{" "}
@@ -50,7 +59,7 @@ const AboutSection = () => {
                 {" "}
                 <a
                   href="https://web.programming-hero.com/course-details"
-                  className="hover:underline cursor-pointer"
+                  className="hover:underline cursor-pointer text-success"
                 >
                   {" "}
                   Programming Hero
@@ -62,6 +71,7 @@ const AboutSection = () => {
             <h1 className="text-2xl underline mb-2">Programming Langues</h1>
             <div className="ml-3">
               <p>JavaScript - Intermitted</p>
+              <p>TypeScript - Bigener</p>
               <p>Python - Bigener</p>
             </div>
           </div>

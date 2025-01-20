@@ -1,9 +1,11 @@
-const SkillIconCard = ({ skill }) => {
+const SkillIconCard = ({ skill, size }) => {
+  console.log(size);
+
   return (
     <div>
       <div className={`relative h-28 w-28 my-4 pt-2`}>
         <div
-          className={`h-28 w-28 border-cyan-200 border-1  absolute bg-sky-200 z-0 rounded-md  rotate-45  `}
+          className={`h-[${size}px] w-[${size}px] border-cyan-200 border-1  absolute bg-sky-200 z-0 rounded-md  rotate-45  `}
         ></div>
         <div className="mt-2">
           <img
