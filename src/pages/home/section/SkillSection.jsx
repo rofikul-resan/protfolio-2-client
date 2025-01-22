@@ -1,5 +1,4 @@
 import { useState } from "react";
-import SectionHeader from "../../../components/SectionHeader";
 import { useEffect } from "react";
 import SkillIconCard from "../../../components/card/SkillIconCard";
 
@@ -55,15 +54,16 @@ const SkillSection = () => {
   return (
     <section>
       <div>
-        <div className=" w-10/12 mx-auto mt-12 ">
+        <div className="w-10/12 mx-auto mt-12">
           {allSkills.length > 0 &&
             allSkills.map((skillRow, idx) => (
               <div
                 style={{
-                  marginTop: idx >= 1 ? -cardSize / 2 : 0,
+                  marginTop:
+                    displayWidth < 768 ? -cardSize / 1.2 : -cardSize / 2,
                 }}
                 key={idx}
-                className={`flex  justify-center gap-12  `}
+                className={`flex justify-center gap-12`}
               >
                 {skillRow.map((skill, i) => (
                   <SkillIconCard key={i} skill={skill} size={cardSize} />

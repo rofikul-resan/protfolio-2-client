@@ -16,6 +16,7 @@ export default {
         paragraph: "font-roboto text-white",
         secondary: "#c2410c",
         success: "#b39ddb",
+        cardBg: "#161131",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

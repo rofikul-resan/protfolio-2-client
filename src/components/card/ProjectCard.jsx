@@ -1,47 +1,123 @@
 import { Button } from "@nextui-org/react";
-import { FaCode } from "react-icons/fa";
-import { VscLiveShare } from "react-icons/vsc";
-import { motion } from "framer-motion";
+import { FaCode, FaGithub } from "react-icons/fa";
 
-const ProjectCard = ({ card, index }) => {
+const ProjectCard = ({ project }) => {
   return (
-    <motion.div
-      whileTap={{ scale: 0.95 }}
-      className={`card ${
-        index % 2 === 0 ? "" : "ml-auto"
-      } w-9/12 text-sky-400 mt-8 bg-transparent  `}
-    >
-      <div className=" flex p-6  ">
-        <div className={`h-72 overflow-hidden rounded-md `}>
-          <img src={card?.images[0]} alt={card?.name} className="w-[900px]" />
-        </div>
-        <div className=" p-8 flex flex-col justify-between">
-          <div className="space-y-4">
-            <h1 className="text-3xl font-semibold">{card?.name}</h1>
-            <p>{card?.details}</p>
-          </div>
-          <div className="flex gap-4 justify-end mt-auto">
-            <Button
-              variant="ghost"
-              size="sm"
-              color="primary"
-              endContent={<FaCode />}
-            >
-              Source code
-            </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              color="success"
-              endContent={<VscLiveShare />}
-            >
-              Live Link
-            </Button>
+    <div>
+      <div>
+        <div className="bg-cardBg h-full w-full rounded-3xl p-4 flex flex-col justify-center items-center">
+          <div>
+            <div className="w-fit h-72 mx-auto mb-4 rounded-2xl overflow-hidden relative">
+              {/* github link  */}
+
+              <div className="absolute top-2 right-2 p-2 bg-gray-900 rounded-full git-icon-button">
+                <div className="flex items-center space-x-2">
+                  <span>
+                    <FaGithub className="text-2xl" />
+                  </span>
+                  <div className="git-link space-x-2 hidden">
+                    <Button
+                      radius="full"
+                      size="sm"
+                      variant="ghost"
+                      color="success"
+                      className="border-[.5px]"
+                      endContent={<FaCode />}
+                    >
+                      <a href={project?.github?.client}>client</a>
+                    </Button>
+                    <Button
+                      radius="full"
+                      size="sm"
+                      variant="ghost"
+                      color="success"
+                      className="border-[.5px]"
+                      endContent={<FaCode />}
+                    >
+                      <a href={project?.github?.server}>server</a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <img
+                src={project?.images[0] || ""}
+                alt="project image"
+                className="w-full"
+              />
+            </div>
+            <div className="space-y-2">
+              <h2 className="text-2xl font-semibold ">{project?.name}</h2>
+              <p className="text-sm text-success">
+                {project?.details}{" "}
+                <span className="text-primary-500 ">
+                  {" "}
+                  <button className="hover:underline">See more...</button>
+                </span>
+              </p>
+              <div className="flex justify-between items-center">
+                <div className="flex flex-wrap gap-2">
+                  {project?.technology?.slice(0, 3).map((tech, index) => (
+                    <span
+                      key={index}
+                      className={`text-xs ${
+                        index === 0
+                          ? "text-primary-500"
+                          : index === 1
+                          ? "text-secondary-500"
+                          : "text-success-500"
+                      }`}
+                    >
+                      #{tech}
+                    </span>
+                  ))}
+                  {project?.technology?.length > 3 && (
+                    <span className="text-xs">...</span>
+                  )}
+                </div>
+                <Button
+                  size="sm"
+                  variant="solid"
+                  color="primary"
+                  className="border-0"
+                  endContent={<FaCode />}
+                >
+                  <a href={project?.liveLink}>Live</a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
 export default ProjectCard;
+
+// project={
+//   "name": "Project One",
+//   "images": [
+//       "/project1.png",
+//       "/project1.png",
+//       "/project1.png"
+//   ],
+//   "details": "This is a detailed description of Project One, highlighting its purpose, functionality, and overall structure.",
+//   "features": [
+//       "Responsive design with modern UI/UX.",
+//       "Real-time data updates using WebSockets.",
+//       "Authentication and authorization implemented."
+//   ],
+//   "technology": [
+//       "React",
+//       "Node.js",
+//       "Express",
+//       "MongoDB",
+//       "Tailwind CSS"
+//   ],
+//   "github": {
+//       "client": "#",
+//       "server": "#"
+//   },
+//   "liveHost": "#",
+//   "videoDemo": "#"
+// }

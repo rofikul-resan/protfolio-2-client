@@ -1,6 +1,5 @@
 import Banner from "./section/Banner";
 import ProjectSection from "./section/ProjectSection";
-import SkillSection from "./section/SkillSection";
 import AboutSection from "./section/AboutSection";
 import BlogSection from "./section/BlogSection";
 
@@ -10,7 +9,6 @@ const Home = () => {
       <Banner />
       <div className="mx-auto max-w-[1200px] space-y-10">
         <AboutSection />
-        <SkillSection />
         <ProjectSection />
         <BlogSection />
       </div>

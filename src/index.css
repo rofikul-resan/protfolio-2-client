@@ -50,3 +50,16 @@ li[data-active="true"] {
   @apply rounded-3xl;
   box-shadow: 0 0 100px -40px rgba(255, 254, 254, 0.3);
 }
+
+/* git icon hover effect */
+
+
+
+.git-icon-button:hover>div>span {
+  display: none;
+}
+
+.git-icon-button:hover .git-link {
+  display: block;
+  margin-right: 4px;
+}

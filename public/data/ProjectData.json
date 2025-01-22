@@ -27,6 +27,33 @@
         "videoDemo": "#"
     },
     {
+        "name": "Project One",
+        "images": [
+            "/project1.png",
+            "/project1.png",
+            "/project1.png"
+        ],
+        "details": "This is a detailed description of Project One, highlighting its purpose, functionality, and overall structure.",
+        "features": [
+            "Responsive design with modern UI/UX.",
+            "Real-time data updates using WebSockets.",
+            "Authentication and authorization implemented."
+        ],
+        "technology": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS"
+        ],
+        "github": {
+            "client": "#",
+            "server": "#"
+        },
+        "liveHost": "#",
+        "videoDemo": "#"
+    },
+    {
         "name": "Project Two",
         "images": [
             "/project1.png",

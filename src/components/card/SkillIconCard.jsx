@@ -17,7 +17,7 @@ const SkillIconCard = ({ skill, size }) => {
           <div className="relative z-10 ">
             <p
               className="text-center font-semibold text-gray-900 "
-              style={{ fontSize: `${size / 10}px` }}
+              style={{ fontSize: `${size / 8}px` }}
             >
               {skill.name}
             </p>
