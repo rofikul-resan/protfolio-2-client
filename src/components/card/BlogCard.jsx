@@ -15,40 +15,22 @@ const textWrapper = (text) => {
 
 const BlogCard = ({ blog }) => {
   return (
-    <div className="px-6 pt-6 rounded-md border-1 bg-gray-950 flex flex-col justify-between">
-      <div className="h-[350px] overflow-hidden rounded-t-md">
+    <div className="px-6 pt-6 rounded-3xl border-1 border-success bg-[#090325] flex flex-col ">
+      <div className="h-[350px] overflow-hidden rounded-t-2xl">
         <img src={blog.image} alt={blog.title} className="h-full w-full" />
       </div>
       <div className="my-5">
         {/* card details  */}
-        <div className="text-white">
-          <h1 className="font-semibold text-2xl italic">{blog.title}</h1>
+        <div className="text-white mt-10">
+          <h1 className="font-semibold text-3xl italic">{blog.title}</h1>
           <p className="font-roboto mt-4">
             {textWrapper(blog.introduction)}{" "}
-            <span className="italic hover:underline hover:text-orange-600 text-orange-300">
+            <span className="italic hover:underline hover:text-primary-600 text-primary">
               <Link to={"#"}>see more</Link>
             </span>{" "}
           </p>
         </div>
         {/* card footer  */}
-        <div className="border-t-1 mt-6 py-2">
-          <div className="grid grid-cols-3  justify-center items-center justify-items-center text-xl mt-3">
-            <div className=" w-28  py-1 hover:bg-white/10 rounded-md ">
-              <ButtonToggler
-                className={"mx-auto"}
-                icon1={<AiOutlineLike className="text-center mx-auto" />}
-                icon2={<AiFillLike className="text-center mx-auto" />}
-                intCount={Math.random().toFixed()}
-              />
-            </div>
-            <div className=" w-28 text-center py-1 hover:bg-white/10 rounded-md ">
-              {<MdInsertComment className="text-center mx-auto" />}
-            </div>
-            <div className=" w-28 text-center py-1 hover:bg-white/10 rounded-md ">
-              {<IoMdShare className="text-center mx-auto" />}
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

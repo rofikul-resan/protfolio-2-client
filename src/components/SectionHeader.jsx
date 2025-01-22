@@ -1,6 +1,6 @@
 const SectionHeader = ({ title, headline, detail }) => {
   return (
-    <div className="my-20 space-y-6">
+    <div className="my-20 space-y-3">
       <h3 className="text-xl uppercase">{title || ""}</h3>
       <h1 className="text-6xl text-success font-bold capitalize">
         {headline || ""}

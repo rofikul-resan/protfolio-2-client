@@ -79,17 +79,19 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div>
-        <h1 className="text-center text-4xl font-semibold text-success my-10">
-          Services
-        </h1>
-        <Services />
-      </div>
-      <div>
-        <h1 className="text-center text-4xl font-semibold text-success my-10">
-          Skills
-        </h1>
-        <SkillSection />
+      <div className="space-y-20 mt-20">
+        <div>
+          <h1 className="text-center text-4xl font-semibold text-success my-10">
+            Services
+          </h1>
+          <Services />
+        </div>
+        <div>
+          <h1 className="text-center text-4xl font-semibold text-success my-10">
+            Skills
+          </h1>
+          <SkillSection />
+        </div>
       </div>
     </section>
   );

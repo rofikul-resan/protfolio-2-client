@@ -1,3 +1,5 @@
+import { RiDoubleQuotesL } from "react-icons/ri";
+
 const testimonials = [
   {
     id: 1,
@@ -24,17 +26,20 @@ const testimonials = [
 
 const ReviewSection = () => {
   return (
-    <section className="bg-gray-900 text-white py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">What Others Say</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+    <section className="bg-[#100d25] text-white pb-20 rounded-3xl overflow-hidden mx-8">
+      <div className="container mx-auto ">
+        <div className=" bg-cardBg px-20 pt-20 pb-36 rounded-3xl ">
+          <h2 className="text-success uppercase text-xl">What others say</h2>
+          <h1 className="text-6xl font-bold">Testimonials.</h1>
+        </div>
+        <div className="grid md:grid-cols-3 gap-14 px-20 -mt-20 ">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-gray-800 p-6 rounded-lg shadow-lg relative"
+              className="bg-[#090325] p-10 rounded-lg shadow-lg relative"
             >
-              <div className="absolute top-4 left-4 text-6xl text-gray-600">
-                "
+              <div>
+                <RiDoubleQuotesL className="text-6xl" />
               </div>
               <p className="text-lg mt-12">{testimonial.text}</p>
               <div className="flex items-center mt-6">

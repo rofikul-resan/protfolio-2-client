@@ -34,7 +34,7 @@ const NavigationBar = () => {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           <p className="font-bold text-inherit">
-            <span className="text-xl">@/</span>
+            <span className="text-xl">@</span>
             <span className=" text-2xl  font-semibold gradient-text">
               rofikul-resan
             </span>{" "}

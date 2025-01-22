@@ -5,7 +5,7 @@ export const serviceData = {
   services: [
     {
       id: 1,
-      title: "Web Development",
+      title: "Front-End Development",
 
       image: webLogo,
     },
