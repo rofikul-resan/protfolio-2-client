@@ -55,7 +55,6 @@ const SkillSection = () => {
   return (
     <section>
       <div>
-        <SectionHeader title={"My Skills"} />
         <div className=" w-10/12 mx-auto mt-12 ">
           {allSkills.length > 0 &&
             allSkills.map((skillRow, idx) => (

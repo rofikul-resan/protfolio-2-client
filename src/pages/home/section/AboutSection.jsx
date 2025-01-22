@@ -1,5 +1,7 @@
 import { BsArrowRight } from "react-icons/bs";
 import SectionHeader from "../../../components/SectionHeader";
+import Services from "../../../components/Services";
+import SkillSection from "./SkillSection";
 
 const AboutSection = () => {
   return (
@@ -77,7 +79,18 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div>
+        <h1 className="text-center text-4xl font-semibold text-success my-10">
+          Services
+        </h1>
+        <Services />
+      </div>
+      <div>
+        <h1 className="text-center text-4xl font-semibold text-success my-10">
+          Skills
+        </h1>
+        <SkillSection />
+      </div>
     </section>
   );
 };
