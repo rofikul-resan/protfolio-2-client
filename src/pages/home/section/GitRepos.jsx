@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import axios from "axios";
 import { fadeIn } from "../../../utils/motion";
 import { Tilt } from "react-tilt";
