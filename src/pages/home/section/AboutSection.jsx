@@ -5,7 +5,7 @@ import SkillSection from "./SkillSection";
 
 const AboutSection = () => {
   return (
-    <section className="mt-10 ">
+    <section className="mt-10 px-10 ">
       <SectionHeader
         title={"Introduction"}
         headline={"About Me"}
@@ -15,7 +15,7 @@ const AboutSection = () => {
       />
 
       {/* tow div  one side my image and other side text about me and my education qualification */}
-      <div className="grid grid-cols-2 justify-center mt-8">
+      <div className="grid grid-cols-2 justify-center mt-8 text-white">
         {/* about image */}
         <div
           className="

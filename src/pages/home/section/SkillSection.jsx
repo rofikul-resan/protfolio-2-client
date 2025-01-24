@@ -20,7 +20,6 @@ const SkillSection = () => {
     setCardRowLimit(
       displayWidth < 1201 ? Math.floor(displayWidth / 200) : 1200 / 200
     );
-    console.log(cardRowLimit);
 
     fetch("/data/skillIcon.json")
       .then((res) => res.json())

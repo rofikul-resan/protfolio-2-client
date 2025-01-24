@@ -1,8 +1,9 @@
 import { FaQuoteLeft } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const ReviewCard = ({ review }) => {
   return (
-    <div className="relative border-2 rounded-md h-72 p-6 mt-14 bg-white/10 backdrop-blur-sm ">
+    <motion.div className="relative border-2 rounded-md h-72 p-6 mt-14 bg-white/10 backdrop-blur-sm ">
       <div className="absolute  -top-10 left-10 p1">
         <FaQuoteLeft className="text-6xl text-orange-400" />
       </div>
@@ -15,7 +16,7 @@ const ReviewCard = ({ review }) => {
         </p>
       </div>
       <p className="mt-6 text-white font-roboto">{review.review}</p>
-    </div>
+    </motion.div>
   );
 };
 
