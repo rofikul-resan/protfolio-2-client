@@ -1,14 +1,15 @@
-import SendAnimation from "../../../components/SendAnimation";
+import { Button } from "@nextui-org/react";
+import { VscSend } from "react-icons/vsc";
 
 const ContactSection = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-4 px-10">
+    <div className=" px-10">
       <div className=" p-10  bg-[#100d25] rounded-2xl">
         <div className="mb-10">
           <p className="uppercase text-success">Get in touch</p>
           <h2 className="text-4xl font-bold">Contact.</h2>
         </div>
-        <div className=" max-w-[400px] w-full">
+        <div className="  w-full">
           <form>
             <div className="mb-4 space-y-4 ">
               <label className=" font-semibold mb-2" htmlFor="name">
@@ -44,17 +45,15 @@ const ContactSection = () => {
               ></textarea>
             </div>
             <div>
-              <button className="bg-cardBg shadow-lg shadow-[#050816] text-white px-8 py-4 rounded-lg">
+              <Button
+                className="bg-cardBg shadow-lg shadow-[#050816] text-white px-8 py-4 rounded-lg"
+                endContent={<VscSend />}
+              >
                 Send
-              </button>
+              </Button>
             </div>
           </form>
         </div>
-      </div>
-
-      {/* animation side */}
-      <div>
-        <SendAnimation />
       </div>
     </div>
   );
